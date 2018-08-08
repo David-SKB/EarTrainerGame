@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ear In Gear</string>
+    <string name="title_activity_help_screen">help_screen</string>
+
+    <string name="title_activity_fullscreen">StartGameActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

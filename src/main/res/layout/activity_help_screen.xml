@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/help_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <ImageView
+        android:id="@+id/piano_image"
+        android:layout_width="178dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/piano_layout" />
+
+    <TextView
+        android:id="@+id/ear_title"
+        android:layout_width="95dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginStart="140dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Ear-In-Gear"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/ear_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/help_guide_image" />
+
+    <TextView
+        android:id="@+id/ear_text"
+        android:layout_width="355dp"
+        android:layout_height="77dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="14dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="Ever wanted to be like Michael Jackson? Well, you’ll need to develop perfect pitch first! The first step is learning how to play:"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/new_game_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ear_title" />
+
+    <TextView
+        android:id="@+id/new_game_title"
+        android:layout_width="91dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginStart="153dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="New Game:"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/new_game_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ear_text" />
+
+    <TextView
+        android:id="@+id/new_game_text"
+        android:layout_width="355dp"
+        android:layout_height="106dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="Click to start a new game! Each game  has 10 rounds and you have 5 seconds (with one attempt) to select the note you hear. Before you start a game, you can freely play around with the piano and press start when ready."
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/my_scores_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_game_title" />
+
+    <TextView
+        android:id="@+id/my_scores_title"
+        android:layout_width="91dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="My Scores:"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/my_scores_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_game_text" />
+
+    <TextView
+        android:id="@+id/my_scores_text"
+        android:layout_width="354dp"
+        android:layout_height="22dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="Here you can see  your last ten scores."
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_scores_title" />
+
+    <TextView
+        android:id="@+id/piano_title"
+        android:layout_width="315dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="Have a look at the image below to familiarise yourself with the keys"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/piano_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_text" />
+
+    <ImageView
+        android:id="@+id/help_guide_image"
+        android:layout_width="277dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/ear_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/helptext" />
+
+    <TextView
+        android:id="@+id/settings_title"
+        android:layout_width="90dp"
+        android:layout_height="22dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Settings:"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/settings_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_scores_text" />
+
+    <TextView
+        android:id="@+id/settings_text"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="Personalise the application here and reset recent scores"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/ear_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_title" />
+</android.support.constraint.ConstraintLayout>

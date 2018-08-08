@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settings_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <CheckBox
+        android:id="@+id/fx_check_box"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="160dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="22dp"
+        android:buttonTint="#7c4417"
+        android:checked="false"
+        android:text="FX"
+        android:textAlignment="center"
+        android:textColorLink="#7c4417"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/fx_check_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/settingslogo" />
+
+    <ImageButton
+        android:id="@+id/clear_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="317dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fx_check_box"
+        app:srcCompat="@drawable/cleardata" />
+
+    <RadioGroup
+        android:id="@+id/vst_radio_group"
+        android:layout_width="226dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="11dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/theme_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sount_text">
+
+        <RadioButton
+            android:id="@+id/piano_radio_button"
+            android:layout_width="122dp"
+            android:layout_height="55dp"
+            android:buttonTint="#7c4417"
+            android:text="Piano"
+            android:textColorLink="#7c4417"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="78dp"
+            tools:layout_editor_absoluteY="218dp" />
+
+        <RadioButton
+            android:id="@+id/guitar_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:buttonTint="#7c4417"
+            android:text="Guitar"
+            android:textColorLink="#7c4417"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="199dp"
+            tools:layout_editor_absoluteY="218dp" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/theme_radio_group"
+        android:layout_width="227dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="31dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="21dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/clear_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/theme_text">
+
+        <RadioButton
+            android:id="@+id/light_radio_button"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#7c4417"
+            android:text="Light"
+            android:textColorLink="#7c4417"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/dark_radio_button"
+            android:layout_width="29dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#7c4417"
+            android:text="Dark"
+            android:textColorLink="#7c4417"
+            android:textSize="24sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/theme_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="33dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Theme"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/theme_radio_group"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vst_radio_group" />
+
+    <TextView
+        android:id="@+id/sount_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="19dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Sound"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/vst_radio_group"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fx_check_box" />
+
+</android.support.constraint.ConstraintLayout>
